@@ -45,7 +45,7 @@ then
 	else
 		echo "$PKG exists, skipping download"
 	fi
-	tar xvjf $PKG --strip 1
+	tar xvzf $PKG --strip 1
 fi
 
 
@@ -60,7 +60,7 @@ then
 	else
 		echo "$PKG found, skipping download"
 	fi
-	tar xvjf $PKG --strip 1 && rm -v $PKG
+	tar xvzf $PKG --strip 1 && rm -v $PKG
 fi
 
 
@@ -75,5 +75,5 @@ then
 	else
 		echo "$PKG found, skipping download"
 	fi
-	tar xvjf $PKG --strip 1 && mv -f -v $PKG ../$PKG && rm -f ./README.md && rm -f -- "$0"
+	tar xvzf $PKG --strip 1 && mv -f -v $PKG ../$PKG && rm -f ./README.md && rm -f -- "$0"
 fi
