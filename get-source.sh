@@ -7,10 +7,10 @@
 
 
 # Set the package version and name:
-NAME=nvidia-graphics-drivers
+NAME=nvidia-graphics-drivers_
 NAME_DEBIAN=
 VER=340.76
-PKG=$NAME_$VER.orig.tar.gz
+PKG=$NAME$VER.orig.tar.gz
 
 # Set the directory in which to download/extract
 # This is meant for workspace/build dir on Jenkins!
